@@ -95,6 +95,9 @@ npm run build
 
 ## Deployment
 
+> **현재(임시)**: 루트 `vercel.json` + `public/index.html`(= `docs/임재정 포트폴리오.html` 디자인 시안 사본)을 정적 사이트로 배포 중.
+> `frontend/`·`backend/` 구현 후에는 이 임시 설정(`vercel.json`, `public/`)을 제거하고 아래 구성으로 전환한다.
+
 - Vercel 프로젝트 2개: `frontend`(Root Directory: `frontend`), `backend`(Root Directory: `backend`).
 - BackEnd 먼저 배포 → URL을 FrontEnd의 `NEXT_PUBLIC_API_BASE_URL`에 설정 → FrontEnd 배포.
 - BackEnd `CORS_ORIGIN`에 FrontEnd 배포 도메인을 등록한다.
